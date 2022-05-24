@@ -387,6 +387,22 @@
                           <div class="swiper-pagination"></div>
                    </div>
     </section>
+    <section id="services">
+           <div class="container">
+                    <div class="text-center">
+                             <h2 class="text-primary">Services</h2>
+                             <p class="text-secondary fs-6">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                    <div>
+                          <div class="row">
+                                   
+                          </div>
+                    </div>
+           </div>
+    </section>
+
+
+
 
       <script src="js/bootstrap.min.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -394,11 +410,29 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        //slidesPerView: 3,
         spaceBetween: 25,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+             426: {
+                 slidesPerView: 1,
+                 spaceBetween: 20,
+             },
+             760: {
+                 slidesPerView: 2,
+                 spaceBetween: 40,
+             },
+             1024: {
+                  slidesPerView: 3,
+                 spaceBetween: 50,
+             },
         },
       });
     </script>
